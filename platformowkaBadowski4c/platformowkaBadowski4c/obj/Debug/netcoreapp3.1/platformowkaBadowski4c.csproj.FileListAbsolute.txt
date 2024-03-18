@@ -1,0 +1,16 @@
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\bin\Debug\netcoreapp3.1\platformowkaBadowski4c.exe
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\bin\Debug\netcoreapp3.1\platformowkaBadowski4c.deps.json
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\bin\Debug\netcoreapp3.1\platformowkaBadowski4c.runtimeconfig.json
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\bin\Debug\netcoreapp3.1\platformowkaBadowski4c.runtimeconfig.dev.json
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\bin\Debug\netcoreapp3.1\platformowkaBadowski4c.dll
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\bin\Debug\netcoreapp3.1\platformowkaBadowski4c.pdb
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\netcoreapp3.1\platformowkaBadowski4c.csproj.AssemblyReference.cache
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\netcoreapp3.1\platformowkaBadowski4c.Form1.resources
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\netcoreapp3.1\platformowkaBadowski4c.csproj.GenerateResource.cache
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\netcoreapp3.1\platformowkaBadowski4c.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\netcoreapp3.1\platformowkaBadowski4c.AssemblyInfoInputs.cache
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\netcoreapp3.1\platformowkaBadowski4c.AssemblyInfo.cs
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\netcoreapp3.1\platformowkaBadowski4c.csproj.CoreCompileInputs.cache
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\netcoreapp3.1\platformowkaBadowski4c.dll
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\netcoreapp3.1\platformowkaBadowski4c.pdb
+C:\Users\213\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\netcoreapp3.1\platformowkaBadowski4c.genruntimeconfig.cache
