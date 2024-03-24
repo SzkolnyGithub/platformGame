@@ -1,0 +1,16 @@
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\bin\Debug\net6.0-windows\platformowkaBadowski4c.exe
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\bin\Debug\net6.0-windows\platformowkaBadowski4c.deps.json
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\bin\Debug\net6.0-windows\platformowkaBadowski4c.runtimeconfig.json
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\bin\Debug\net6.0-windows\platformowkaBadowski4c.dll
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\bin\Debug\net6.0-windows\platformowkaBadowski4c.pdb
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\net6.0-windows\platformowkaBadowski4c.Form1.resources
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\net6.0-windows\platformowkaBadowski4c.csproj.GenerateResource.cache
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\net6.0-windows\platformowkaBadowski4c.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\net6.0-windows\platformowkaBadowski4c.AssemblyInfoInputs.cache
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\net6.0-windows\platformowkaBadowski4c.AssemblyInfo.cs
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\net6.0-windows\platformowkaBadowski4c.csproj.CoreCompileInputs.cache
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\net6.0-windows\platformowkaBadowski4c.dll
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\net6.0-windows\refint\platformowkaBadowski4c.dll
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\net6.0-windows\platformowkaBadowski4c.pdb
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\net6.0-windows\platformowkaBadowski4c.genruntimeconfig.cache
+C:\Users\artur\source\repos\platformowkaBadowski4c\platformowkaBadowski4c\obj\Debug\net6.0-windows\ref\platformowkaBadowski4c.dll

@@ -1,5 +1,4 @@
-﻿
-namespace platformowkaBadowski4c
+﻿namespace platformowkaBadowski4c
 {
     partial class Form1
     {
@@ -29,34 +28,58 @@ namespace platformowkaBadowski4c
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.SuspendLayout();
+            panel1 = new Panel();
+            coins = new Label();
+            keys = new Label();
+            SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(96, 64);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(937, 351);
-            this.panel1.TabIndex = 0;
+            panel1.Location = new Point(12, 12);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(937, 351);
+            panel1.TabIndex = 0;
+            // 
+            // coins
+            // 
+            coins.AutoSize = true;
+            coins.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            coins.Location = new Point(970, 27);
+            coins.Name = "coins";
+            coins.Size = new Size(100, 28);
+            coins.TabIndex = 0;
+            coins.Text = "Monety: 0";
+            // 
+            // keys
+            // 
+            keys.AutoSize = true;
+            keys.Font = new Font("Segoe UI", 15F, FontStyle.Regular, GraphicsUnit.Point);
+            keys.Location = new Point(970, 91);
+            keys.Name = "keys";
+            keys.Size = new Size(88, 28);
+            keys.TabIndex = 1;
+            keys.Text = "Klucze: 0";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1199, 600);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Form1";
-            this.Text = "tytul placeholder";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1183, 561);
+            Controls.Add(keys);
+            Controls.Add(coins);
+            Controls.Add(panel1);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Name = "Form1";
+            Text = "Squareformer";
+            KeyPress += Form1_KeyPress;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private Panel panel1;
+        private Label coins;
+        private Label keys;
     }
 }
-
