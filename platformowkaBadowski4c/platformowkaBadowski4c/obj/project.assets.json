@@ -8,25 +8,28 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\artur\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\213\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artur\\source\\repos\\platformowkaBadowski4c\\platformowkaBadowski4c\\platformowkaBadowski4c.csproj",
+      "projectUniqueName": "C:\\Users\\213\\source\\repos\\platformowkaBadowski4c\\platformowkaBadowski4c\\platformowkaBadowski4c.csproj",
       "projectName": "platformowkaBadowski4c",
-      "projectPath": "C:\\Users\\artur\\source\\repos\\platformowkaBadowski4c\\platformowkaBadowski4c\\platformowkaBadowski4c.csproj",
-      "packagesPath": "C:\\Users\\artur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artur\\source\\repos\\platformowkaBadowski4c\\platformowkaBadowski4c\\obj\\",
+      "projectPath": "C:\\Users\\213\\source\\repos\\platformowkaBadowski4c\\platformowkaBadowski4c\\platformowkaBadowski4c.csproj",
+      "packagesPath": "C:\\Users\\213\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\213\\source\\repos\\platformowkaBadowski4c\\platformowkaBadowski4c\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\artur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\213\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
@@ -70,7 +73,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

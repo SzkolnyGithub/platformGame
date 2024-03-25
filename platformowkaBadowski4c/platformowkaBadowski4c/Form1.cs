@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Timers;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace platformowkaBadowski4c
 {
@@ -21,6 +22,7 @@ namespace platformowkaBadowski4c
         int tag = 0;
         int coinAmount = 0;
         int keyAmount = 0;
+        string lastW = "";
         List<string> miscellaneous = new List<string>();
         List<string> pngs = new List<string>();
         int graczX = 0, graczY = 0, speed = 30;
@@ -80,13 +82,14 @@ namespace platformowkaBadowski4c
             pola[199].Name = "end";
             pola[91].Image = Image.FromFile(miscellaneous[5]);
             pola[155].Image = Image.FromFile(miscellaneous[5]);
-            pola[91].Name = "lock";
+            pola[91].Name = "lockS";
             pola[155].Name = "lock";
             pola[15].Image = Image.FromFile(miscellaneous[4]);
             pola[171].Image = Image.FromFile(miscellaneous[4]);
             pola[15].Name = "key";
             pola[171].Name = "key";
-            pngs = Directory.GetFiles("./", "gracz*.png").ToList();
+            string[] temp = new string[3] { "./graczIdle.png", "./graczLeft.png", "./graczRight.png" };
+            pngs = temp.ToList();
             gracz.Width = 30;
             gracz.Height = 30;
             gracz.Location = new Point(0, 0);
@@ -106,90 +109,130 @@ namespace platformowkaBadowski4c
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e)
         {
+            coins.Text = gracz.Location.ToString();
             if (e.KeyChar.ToString().ToUpper() == Keys.A.ToString())
             {
-                if (graczX - speed < 0)
-                {
-                    return;
-                }
+                if (graczX - speed < 0) return;
                 graczX -= speed;
                 gracz.Tag = tag - 1;
                 tag -= 1;
-                if (check(tag) == "nuh-uh")
+                string wynik = check(tag);
+                if(wynik == "ok")
+                {
+                    gracz.Location = new Point(graczX, graczY);
+                    gracz.Image = Image.FromFile(pngs[1]);
+                }
+                else if (wynik == "nuh-uh")
                 {
                     graczX += speed;
                     gracz.Tag = tag + 1;
                     tag += 1;
                     return;
                 }
-                gracz.Image = Image.FromFile(pngs[1]);
-                gracz.Location = new Point(graczX, graczY);
-                ruch();
+                else if (wynik == "nope")
+                {
+                    graczX = 0;
+                    graczY = 0;
+                    tag = 0;
+                    gracz.Tag = tag;
+                    gracz.Location = new Point(0, 0);
+                    lastW = "nope";
+                    return;
+                }
             }
             if (e.KeyChar.ToString().ToUpper() == Keys.W.ToString())
             {
-                if (graczY - speed < 0)
-                {
-                    return;
-                }
+                if (graczY - speed < 0) return;
                 graczY -= speed;
                 gracz.Tag = tag - 20;
                 tag -= 20;
-                if (check(tag) == "nuh-uh")
+                string wynik = check(tag);
+                if (wynik == "ok")
+                {
+                    gracz.Location = new Point(graczX, graczY);
+                    gracz.Image = Image.FromFile(pngs[0]);
+                }
+                else  if (wynik == "nuh-uh")
                 {
                     graczY += speed;
                     gracz.Tag = tag + 20;
                     tag += 20;
                     return;
                 }
-                gracz.Image = Image.FromFile(pngs[1]);
-                gracz.Location = new Point(graczX, graczY);
-                ruch();
+                else if (wynik == "nope")
+                {
+                    graczX = 0;
+                    graczY = 0;
+                    tag = 0;
+                    gracz.Tag = tag;
+                    gracz.Location = new Point(0, 0);
+                    lastW = "nope";
+                    return;
+                }
             }
             if (e.KeyChar.ToString().ToUpper() == Keys.D.ToString())
             {
-                if (graczX + speed >= panel1.Width)
-                {
-                    return;
-                }
+                if (graczX + speed >= panel1.Width) return;
                 graczX += speed;
                 gracz.Tag = tag + 1;
                 tag += 1;
-                if (check(tag) == "nuh-uh")
+                string wynik = check(tag);
+                if (wynik == "ok")
+                {
+                    gracz.Location = new Point(graczX, graczY);
+                    gracz.Image = Image.FromFile(pngs[2]);
+                }
+                else if (wynik == "nuh-uh")
                 {
                     graczX -= speed;
                     gracz.Tag = tag - 1;
                     tag -= 1;
                     return;
                 }
-                gracz.Image = Image.FromFile(pngs[2]);
-                gracz.Location = new Point(graczX, graczY);
-                ruch();
+                else if (wynik == "nope")
+                {
+                    graczX = 0;
+                    graczY = 0;
+                    tag = 0;
+                    gracz.Tag = tag;
+                    gracz.Location = new Point(0, 0);
+                    lastW = "nope";
+                    return;
+                }
             }
             if (e.KeyChar.ToString().ToUpper() == Keys.S.ToString())
             {
-                if (graczY + speed >= panel1.Height)
-                {
-                    return;
-                }
+                if (graczY + speed >= panel1.Height) return;
                 graczY += speed;
                 gracz.Tag = tag + 20;
                 tag += 20;
-                if (check(tag) == "nuh-uh")
+                string wynik = check(tag);
+                if (wynik == "ok")
+                {
+                    gracz.Location = new Point(graczX, graczY);
+                    gracz.Image = Image.FromFile(pngs[0]);
+                }
+                else if (wynik == "nuh-uh")
                 {
                     graczY -= speed;
                     gracz.Tag = tag - 20;
                     tag -= 20;
                     return;
+                } else if (wynik == "nope")
+                {
+                    graczX = 0;
+                    graczY = 0;
+                    tag = 0;
+                    gracz.Tag = tag;
+                    gracz.Location = new Point(0, 0);
+                    lastW = "nope";
+                    return;
                 }
-                gracz.Image = Image.FromFile(pngs[2]);
-                gracz.Location = new Point(graczX, graczY);
-                ruch();
             }
-            gracz.Image = Image.FromFile(pngs[0]);
         }
         private string check(int next)
         {
+            if (next > pola.Length || next < 0) return "nuh-uh";
             if (pola[next].Name == "wall")
             {
                 return "nuh-uh";
@@ -197,18 +240,24 @@ namespace platformowkaBadowski4c
             if (pola[next].Name == "coin")
             {
                 pola[next].Image = null;
+                pola[next].Name = "pusty";
                 pola[next].BackColor = Color.LightGray;
                 coinAmount++;
                 coins.Text = "Monety: " + coinAmount;
+                gracz.Location = new Point(graczX, graczY);
+                gracz.Image = Image.FromFile(pngs[0]);
                 return "coin:peepohappy:";
             }
             if (pola[next].Name == "end")
             {
-                if(coinAmount == 7)
+                if (coinAmount == 7)
                 {
-                    MessageBox.Show("Jako jedynemu udało ci się opuścić te katakumby z życiem!", "Gratulacje!");
+                    MessageBox.Show("Wygrałeś!", "Gratulacje!");
+                    gracz.Location = new Point(graczX, graczY);
+                    gracz.Image = Image.FromFile(pngs[0]);
                     return "happyEnd";
-                } else
+                }
+                else
                 {
                     return "nuh-uh";
                 }
@@ -219,27 +268,56 @@ namespace platformowkaBadowski4c
                 pola[next].BackColor = Color.LightGray;
                 keyAmount++;
                 keys.Text = "Klucze: " + keyAmount;
+                gracz.Location = new Point(graczX, graczY);
+                gracz.Image = Image.FromFile(pngs[0]);
                 return "key:peepohappy:";
             }
-            if (pola[next].Name == "lock")
+            if (pola[next].Name == "lock" || pola[next].Name == "lockS")
             {
-                pola[next].Image = null;
-                pola[next].BackColor = Color.LightGray;
-                /*if(keyAmount == 1)
+                if(keyAmount >= 1)
                 {
-                    for (int i = 0; i < 3; i++)
+                    if(pola[next].Name == "lockS")
                     {
-                        if (pola[i].Name == "fakewall")
-                        {
-                            pola[i].Image = null;
-                            pola[i].BackColor = Color.LightGray;
-                        }
+                        pola[next].Image = null;
+                        pola[next].BackColor = Color.LightGray;
+                        pola[next].Name = "empty";
+                        keyAmount--;
+                        keys.Text = "Klucze: " + keyAmount;
+                        pola[31].Image = null;
+                        pola[31].BackColor = Color.LightGray;
+                        pola[51].Image = null;
+                        pola[51].BackColor = Color.LightGray;
+                        pola[71].Image = null;
+                        pola[71].BackColor = Color.LightGray;
+                        gracz.Location = new Point(graczX, graczY);
+                        gracz.Image = Image.FromFile(pngs[0]);
+                    } else if (pola[next].Name == "lock")
+                    {
+                        pola[next].Image = null;
+                        pola[next].BackColor = Color.LightGray;
+                        pola[next].Name = "empty";
+                        keyAmount--;
+                        keys.Text = "Klucze: " + keyAmount;
+                        gracz.Location = new Point(graczX, graczY);
+                        gracz.Image = Image.FromFile(pngs[0]);
                     }
-                }*/
+                    else
+                    {
+                        return "nuh-uh";
+                    }
+                } else
+                {
+                    return "nuh-uh";
+                }
+            }
+            if (pola[next].Name == "ded")
+            {
+                MessageBox.Show("Wszedłeś na czaszkę i umarłeś.", "Spróbuj ponownie");
+                return "nope";
             }
             return "ok";
         }
-        private void ruch()
+        /*private void ruch()
         {
             for (int i = 0; i < 200; i++)
             {
@@ -249,6 +327,6 @@ namespace platformowkaBadowski4c
                     // pola[i].BackColor = Color.White;
                 }
             }
-        }
+        }*/
     }
 }
